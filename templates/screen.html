@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Loan Prediction</title>
+        <style>
+            body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            
+        }
+           form {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        input[type="text"],input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type="submit"] {
+            background-color: #4CAF50;
+            padding: 12px 20px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        </style>
+    </head>
+    <body>
+        <form action="/predict" method='post'>
+            <br>
+            <h1>Loan Prediction</h1><br>
+            <label>Loan_ID</label>
+            <input type="text" name="Loan_ID">
+            <label>Gender</label>
+            <input type="text" name="Gender">
+            <label>Married</label>
+            <input type="text" name="Married">
+            <label>Dependents</label>
+            <input type="text" name="Dependents">
+            <label>Education</label>
+            <input type="text" name="Education">
+            <label>Self_Employed</label>
+            <input type="text" name="Self_Employed">
+            <label>ApplicantIncome</label>
+            <input type="number" name="ApplicantIncome">
+            <label>CoapplicantIncome</label>
+            <input type="text" name="CoapplicantIncome">
+            <label>LoanAmount</label>
+            <input type="text" name="LoanAmount">
+            <label>Loan_Amount_Term</label>
+            <input type="text" name="Loan_Amount_Term">
+            <label>Credit_History</label>
+            <input type="text" name="Credit_History">
+            <label>Property_Area</label>
+            <input type="text" name="Property_Area">
+            <input type="submit" value="Predict">
+         </form>
+    </body>
+</html>
